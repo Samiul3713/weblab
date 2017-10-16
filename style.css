@@ -1,0 +1,78 @@
+
+@keyframes example {
+   
+    0%  {color: darkblue; }
+    40%  {color: firebrick;}
+    75%  {color: blueviolet; }
+    100% {color: cornflowerblue}
+}
+
+body{
+	background: #002D40;
+}
+.converter_wrapper h3{
+	margin: 40px 0;
+	color: whitesmoke;
+}
+.converter_wrapper h1{
+    color: white;
+}
+.converter_wrapper{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.converter_section{
+	border: 1px solid black;
+    background: #80A2BF;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: auto;
+    
+}
+
+.button{
+	background: #80A2BF;
+	color: #fff;
+	border: 1px solid white;
+	border-radius: 10px;
+	/*transform: translateY(112%);*/
+	transition: all 2s;
+	text-transform: uppercase;
+	font-weight: bolder;
+	cursor: pointer;
+    margin-top: 35px;
+
+}
+
+.button:hover{
+	background: #fff;
+	color: #80A2BF;
+	border:1px solid black;
+	
+}
+
+label{
+	color: white;
+}
+
+.table_content{
+	margin: auto;
+}
+
+.fortune_section
+{
+ 
+  margin-top: 50px;
+  padding: 10px;
+ animation-name: example;
+  animation-duration: 20s;
+}
+
+#fortune
+{
+  border: 2px solid black;
+  background-color: #EEEEEE;
+  padding: 20px;
+
+}
+

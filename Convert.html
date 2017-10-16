@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency converter</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript" src="function.js"></script>
+	
+</head>
+<body onload="load(),tellFortune()">
+
+<!-- Currency converter -->
+	<section class="container converter_wrapper">
+
+		<h1 class="text-uppercase text-center">Welcome to my currency converter</h1>
+		<h3 class=" text-center">Insert a number in one of the currency fields.</h3>
+		<div class="row"></div>
+			<div class="col-md-5 col-sm-8 col-xs-12 ml-auto converter_section">
+				<form>
+				  <div class="form-group">
+				    <label for="GBP"> GBP </label>
+				    <input type="number" class="form-control" id="GBP" name="gbp" value="0" onchange="gbpConvert()" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="USD"> USD </label>
+				    <input type="number" class="form-control" id="USD" name="usd" value="0" onchange="usdConvert()" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="EUR"> EUR </label>
+				    <input type="number" class="form-control" id="EUR" name="eur" value="0" onchange="eurConvert()" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="CAD"> CAD </label>
+				    <input type="number" class="form-control" id="CAD" name="cad" value="0" onchange="cadConvert()" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="AUD"> AUD </label>
+				    <input type="number" class="form-control" id="AUD" name="aud" value="0" onchange="audConvert()" placeholder="">
+				  </div>
+				  <button class="btn btn-block btn-lg button">Convert</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+<!-- Fortune generator -->
+	<section class="container fortune_section">
+	  <div class="row justify-content-md-center">
+	  	<div class="col-auto">
+	  		<h3 id="fortune"></h3>
+	  	</div>
+	  </div>  
+	</section>
+
+
+
+</body>
+</html>
